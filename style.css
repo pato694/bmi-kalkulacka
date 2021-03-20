@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(41, 43, 44);
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 75px;
+}
+
+table,
+th {
+    border: 2px solid black;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.nadpis {
+    font-size: 25px;
+}
+
+html,
+body {
+    height: 95.9%;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    min-height: 100%;
+    margin: 0 auto -50px;
+}

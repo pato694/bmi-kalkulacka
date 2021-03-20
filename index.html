@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="cs">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zašlete nám zpětnou vazbu.">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="shortcut icon" href="img/calc.png" type="image/x-icon">
+    <title>BMI Kalkulačka</title>
+</head>
+
+<body>
+    <div class="container content">
+        <h1 class="text-center">BMI kalkulačka </h1>
+        <div class="row">
+            <div class="field col-sm-6 bg-inverse">
+                <div class="form-group">
+                    <label for="" class="label col-sm-6 mt-5">Výška (m)</label>
+                    <div class="col-sm-12">
+                        <input type="number" id="height" class="form-control" value="" required="required" placeholder="Zadej výšku">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="label col-sm-6">Váha (kg)</label>
+                    <div class="col-sm-12">
+                        <input type="number" id="weight" class="form-control" value="" required="required" placeholder="Zadej váhu">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-9 col-sm-offset-3">
+                        <button value="calculate" type="submit" class="btn btn-success" id="vypocet">Odeslat</button>
+                    </div>
+                </div>
+            </div>
+            <table class="mt-5 col-sm-6 col-md-6 col-lg-6">
+                <thead>
+                    <tr class="nadpis">
+                        <th>
+                            <strong>STAV</strong>
+                        </th>
+                        <th>
+                            <strong>BMI</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            podvýživa
+                        </th>
+                        <th>
+                            pod 16,5
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            podváha
+                        </th>
+                        <th>
+                            16,5 - 18,5
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <strong>ideální váha</strong>
+                        </th>
+                        <th>
+                            <strong>18,5 - 25</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <strong>nadváha</strong>
+                        </th>
+                        <th>
+                            <strong>25 - 30</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <strong>mírná obezita</strong>
+                        </th>
+                        <th>
+                            <strong>30 - 35</strong>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <strong>obezita</strong>
+                        </th>
+                        <th>
+                            <strong>nad 35</strong>
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="result">
+            <h2 class="title m-3"></h2>
+        </div>
+    </div>
+
+    <footer class="container bg-dark">
+        <div class="row text-muted p-4">
+            <div class="col-sm-12 border-right border-left text-center">
+                <p>
+                    <strong>&copy; <a href="https://github.com/pato694/">Vojtěch Dohnal</a> 2021</strong>
+                </p>
+                <p>
+                    <strong>
+                        <a href="http://www.sspu-opava.cz/">SŠPU Opava</a> IT4</strong>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
